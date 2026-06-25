@@ -1,21 +1,44 @@
 /* You can add global styles to this file, and also import other style files */
 
 :root {
-  --bg: #f8fafc;
-  --section-alt: #f3f7fb;
-  --surface: #ffffff;
-  --surface-strong: #fcfdff;
-  --border: rgba(15, 23, 42, 0.08);
-  --text-primary: #0f172a;
-  --text-secondary: #334155;
-  --text-muted: #64748b;
-  --accent: #0f766e;
-  --accent-strong: #0f4c81;
-  --accent-soft: rgba(15, 118, 110, 0.12);
-  --accent-border: rgba(15, 118, 110, 0.2);
-  --shadow: rgba(15, 23, 42, 0.08);
-  --shadow-strong: rgba(15, 23, 42, 0.12);
-  --hero-glow: rgba(15, 118, 110, 0.12);
+  --purple: #7C3AED;
+  --purple2: #A78BFA;
+  --purple3: #EDE9FE;
+  --pink: #EC4899;
+  --pink2: #F9A8D4;
+  --pink3: #FDF2F8;
+  --cyan: #06B6D4;
+  --cyan2: #67E8F9;
+  --cyan3: #ECFEFF;
+  --amber: #F59E0B;
+  --amber2: #FCD34D;
+  --amber3: #FFFBEB;
+  --green: #10B981;
+  --green2: #6EE7B7;
+  --green3: #ECFDF5;
+  --orange: #F97316;
+  --ink: #0F0A1E;
+  --ink2: #1E1433;
+  --ink3: #4B4565;
+  --ink4: #7C7899;
+  --surface: #FFFFFF;
+  --bg: #F8F7FF;
+  --section-alt: #F6F3FF;
+  --surface-strong: #FFFFFF;
+  --border: rgba(15, 10, 30, 0.08);
+  --text-primary: #0F0A1E;
+  --text-secondary: #4B4565;
+  --text-muted: #7C7899;
+  --accent: var(--purple);
+  --accent-strong: var(--pink);
+  --accent-soft: var(--purple3);
+  --accent-border: rgba(124, 58, 237, 0.2);
+  --shadow: rgba(15, 10, 30, 0.08);
+  --shadow-strong: rgba(15, 10, 30, 0.12);
+  --hero-glow: rgba(124, 58, 237, 0.12);
+  --sans: 'Inter', system-ui, sans-serif;
+  --display: 'Syne', sans-serif;
+  --mono: 'JetBrains Mono', monospace;
 }
 
 html {
