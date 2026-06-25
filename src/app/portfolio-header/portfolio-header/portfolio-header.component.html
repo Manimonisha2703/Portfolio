@@ -1,0 +1,19 @@
+<header class="portfolio-header">
+  <div class="header-top">
+    <a class="brand" href="#">Monisha.dev</a>
+    <button class="menu-toggle" type="button" aria-label="Toggle navigation" (click)="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+
+  <nav class="nav-links" [class.open]="isMenuOpen" aria-label="Primary navigation">
+    <a class="nav-link" href="#about" (click)="closeMenu()">About</a>
+    <a class="nav-link" href="#skills" (click)="closeMenu()">Skills</a>
+    <a class="nav-link" href="#experience" (click)="closeMenu()">Experience</a>
+    <a class="nav-link" href="#projects" (click)="closeMenu()">Projects</a>
+    <a class="nav-link" href="#contact" (click)="closeMenu()">Contact</a>
+    <a class="hire-btn mobile-hire" href="#contact" (click)="closeMenu()">Hire me</a>
+  </nav>
+</header>

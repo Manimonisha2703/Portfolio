@@ -1,0 +1,17 @@
+<section class="projects-section" id="projects">
+  <div class="projects-header">
+    <p class="section-tag">Projects</p>
+    <h2>Things I’ve shipped</h2>
+  </div>
+
+  <div class="projects-grid" *ngIf="projects.length">
+    <article class="project-card" *ngFor="let project of projects">
+      <h3>{{ project.Name }}</h3>
+      <p class="project-description">{{ project.Description }}</p>
+      <p class="project-highlight" *ngIf="project.Highlight">{{ project.Highlight }}</p>
+      <div class="project-tags">
+        <span class="project-tag" *ngFor="let tech of project.Technologies">{{ tech }}</span>
+      </div>
+    </article>
+  </div>
+</section>

@@ -1,0 +1,25 @@
+<section class="hero-section">
+  <div class="hero-copy">
+    <p class="availability">Available for full stack roles • India</p>
+    <h1>Hi, I'm <span>Manimonisha P</span></h1>
+    <h2>Full Stack Developer • Angular + .NET Core</h2>
+    <p class="description">
+      Building enterprise apps that are fast, secure, and built to scale — from polished Angular UIs to cloud-backed .NET APIs.
+    </p>
+
+    <div class="hero-actions">
+      <a class="primary-btn" href="#projects">See my work</a>
+      <a class="secondary-btn" href="#contact">Get in touch</a>
+    </div>
+  </div>
+
+  <div class="hero-panel">
+
+    <div class="hero-stats" *ngIf="glimpses.length">
+      <div class="stat-card" *ngFor="let info of glimpses">
+        <strong>{{ info.Value }}</strong>
+        <span>{{ info.Name }}</span>
+      </div>
+    </div>
+  </div>
+</section>

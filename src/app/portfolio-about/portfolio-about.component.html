@@ -1,0 +1,14 @@
+<section class="about-section" id="about">
+  <div class="about-intro">
+    <p class="section-tag">About me</p>
+    <h2>The developer behind the work</h2>
+    <p class="description">{{ selfDescription }}</p>
+  </div>
+
+  <div class="about-card">
+    <div class="skills-list" *ngIf="keywords?.length">
+      <span class="skill-pill" *ngFor="let key of keywords">{{ key }}</span>
+    </div>
+  </div>
+</section>
+
