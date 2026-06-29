@@ -1,0 +1,23 @@
+<section class="login-shell">
+  <div class="login-card">
+    <div class="login-card__header">
+      <p class="eyebrow">Admin portal</p>
+      <h1>Welcome back</h1>
+      <p>Sign in to manage your portfolio content.</p>
+    </div>
+
+    <form class="login-form" (ngSubmit)="onSubmit()">
+      <div class="field-group">
+        <label for="userName">Username</label>
+        <input id="userName" type="text" required [(ngModel)]="userName" name="userName" placeholder="Enter username" />
+      </div>
+
+      <div class="field-group">
+        <label for="adminPassword">Password</label>
+        <input id="adminPassword" type="password" required [(ngModel)]="adminPassword" name="adminPassword" placeholder="Enter password" />
+      </div>
+
+      <button type="submit">Login</button>
+    </form>
+  </div>
+</section>

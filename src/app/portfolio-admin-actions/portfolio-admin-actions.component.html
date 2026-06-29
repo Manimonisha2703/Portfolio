@@ -1,0 +1,13 @@
+<div>
+  <h2>Admin Actions</h2>
+  <p>Welcome, Admin!</p>
+</div>
+
+<div> 
+    <h2>Add glimpses</h2>
+    <Label for="glimpsesValue">Value</Label>
+    <input type="text" [(ngModel)]="glimpsesValue" />
+    <Label for="glimpsesDescription">Description</Label>
+    <input type="text" [(ngModel)]="glimpsesDescription" />
+    <button (click)="addGlimpses()">Add Glimpses</button>
+</div>

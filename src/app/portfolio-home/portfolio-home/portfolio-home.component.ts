@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PortfolioAdminHttpService } from 'src/Shared/portfolio-admin-http.service';
 import { GlimpsesInfo } from 'src/Shared/portfolio.model';
 
 @Component({
@@ -10,14 +11,26 @@ export class PortfolioHomeComponent implements OnInit {
 
   glimpses : Array<GlimpsesInfo> = [];
 
-  constructor() { }
+  constructor(private portfolioAdminHttpService : PortfolioAdminHttpService) { }
 
   ngOnInit(): void {
 
-    this.glimpses.push({Value: "3.5+", Name: "years of experience"});
-    this.glimpses.push({Value: "40%", Name: "cloud cost saved"});
-    this.glimpses.push({Value: "8.7", Name: "CGPA (B.E.)"});
-    this.glimpses.push({Value: "10K", Name: "hackathon prize"});
+    this.portfolioAdminHttpService.getGlimpses().subscribe({
+      next : (response : Array<GlimpsesInfo>) => {
+
+        response.forEach(element => {
+          const tempResponse = new GlimpsesInfo();
+          tempResponse.Value = element.Value;
+          tempResponse.Description = element.Description;
+
+          this.glimpses.push(tempResponse);
+        });
+        
+        console.log(response);
+      }
+    })
+
+
   }
 
 }

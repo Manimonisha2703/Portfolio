@@ -1,6 +1,6 @@
 export class GlimpsesInfo {
     Value: string;
-    Name: string;
+    Description: string;
 }
 
 export class SkillsInfo {
@@ -22,4 +22,11 @@ export class ExperienceInfo {
     Duration: string;
     WorkDescription : Array<string>;
     Technologies: Array<string>;
+}
+export class LoginInfo {
+    UserName: string;
+    Password: string;
+}
+export class LoginResponse {
+    token: string;
 }

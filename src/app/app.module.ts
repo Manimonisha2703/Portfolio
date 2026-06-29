@@ -12,6 +12,11 @@ import { PortfolioProjectsComponent } from './portfolio-projects/portfolio-proje
 import { PortfolioContactComponent } from './portfolio-contact/portfolio-contact.component';
 import { PortfolioEducationComponent } from './portfolio-education/portfolio-education.component';
 import { PortfolioFooterComponent } from './portfolio-footer/portfolio-footer.component';
+import { PortfolioAdminLoginComponent } from './portfolio-admin-login/portfolio-admin-login.component';
+import { PortfolioMainComponent } from './portfolio-main/portfolio-main.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { PortfolioAdminActionsComponent } from './portfolio-admin-actions/portfolio-admin-actions.component';
 
 @NgModule({
   declarations: [
@@ -24,11 +29,16 @@ import { PortfolioFooterComponent } from './portfolio-footer/portfolio-footer.co
     PortfolioProjectsComponent,
     PortfolioContactComponent,
     PortfolioEducationComponent,
-    PortfolioFooterComponent
+    PortfolioFooterComponent,
+    PortfolioAdminLoginComponent,
+    PortfolioMainComponent,
+    PortfolioAdminActionsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

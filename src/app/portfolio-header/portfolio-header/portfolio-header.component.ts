@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-portfolio-header',
@@ -8,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class PortfolioHeaderComponent implements OnInit {
   isMenuOpen = false;
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
@@ -19,5 +20,9 @@ export class PortfolioHeaderComponent implements OnInit {
 
   closeMenu(): void {
     this.isMenuOpen = false;
+  }
+
+  openAdminLogin() {
+    this.router.navigate(['/admin-login']);
   }
 }
