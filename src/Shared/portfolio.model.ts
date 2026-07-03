@@ -1,6 +1,6 @@
 export class GlimpsesInfo {
-    Value: string;
-    Description: string;
+    value: string;
+    description: string;
 }
 
 export class SkillsInfo {
@@ -29,4 +29,9 @@ export class LoginInfo {
 }
 export class LoginResponse {
     token: string;
+}
+
+export class AboutDetails {
+    description: string;
+    keywords: Array<string>
 }

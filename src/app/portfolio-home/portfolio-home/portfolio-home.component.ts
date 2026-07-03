@@ -20,8 +20,8 @@ export class PortfolioHomeComponent implements OnInit {
 
         response.forEach(element => {
           const tempResponse = new GlimpsesInfo();
-          tempResponse.Value = element.Value;
-          tempResponse.Description = element.Description;
+          tempResponse.value = element.value;
+          tempResponse.description = element.description;
 
           this.glimpses.push(tempResponse);
         });

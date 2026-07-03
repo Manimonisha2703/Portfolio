@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { GlimpsesInfo } from './portfolio.model';
+import { AboutDetails, GlimpsesInfo } from './portfolio.model';
 import { PortfolioHttpService } from 'src/app/service/portfolio-http.service';
 import { environment } from 'src/environments/environment';
 
@@ -18,5 +18,9 @@ export class PortfolioAdminHttpService {
 
   getGlimpses() {
     return this.http.get(`${this.baseUrl}/Glimpses/GetGlimpses`);
+  }
+
+  addAbout(aboutDetails: AboutDetails) {
+    return this.http.post(`${this.baseUrl}/About/addAbout`, aboutDetails);
   }
 }

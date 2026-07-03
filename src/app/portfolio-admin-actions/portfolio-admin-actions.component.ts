@@ -20,8 +20,8 @@ export class PortfolioAdminActionsComponent implements OnInit {
   addGlimpses() {
 
     const glimpsesInfo = {
-      Value: this.glimpsesValue,
-      Description: this.glimpsesDescription
+      value: this.glimpsesValue,
+      description: this.glimpsesDescription
     }
     this.portfolioAdminHttpService.addGlimpses(glimpsesInfo).subscribe({
       next : () => {
