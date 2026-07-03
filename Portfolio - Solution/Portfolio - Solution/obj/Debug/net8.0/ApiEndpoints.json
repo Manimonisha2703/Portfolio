@@ -1,5 +1,31 @@
 [
   {
+    "ContainingType": "Portfolio___Solution.Controller.AboutController",
+    "Method": "PostAboutDescription",
+    "RelativePath": "api/About/addAboutDesc",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "description",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "Portfolio___Solution.Controller.GlimpsesController",
     "Method": "AddGlimpses",
     "RelativePath": "api/Glimpses/addGlimpses",

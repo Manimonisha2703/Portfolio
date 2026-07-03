@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "D:\\Portfolio - Manimonisha\\Portfolio - Solution\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{5B244C50-C5C1-4D9F-BEAA-FAEA5E0C6665}|Portfolio - Solution\\Portfolio - Solution.csproj|d:\\portfolio - manimonisha\\portfolio - solution\\portfolio - solution\\repository\\portfoliorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B244C50-C5C1-4D9F-BEAA-FAEA5E0C6665}|Portfolio - Solution\\Portfolio - Solution.csproj|solutionrelative:portfolio - solution\\repository\\portfoliorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B244C50-C5C1-4D9F-BEAA-FAEA5E0C6665}|Portfolio - Solution\\Portfolio - Solution.csproj|d:\\portfolio - manimonisha\\portfolio - solution\\portfolio - solution\\services\\aboutservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B244C50-C5C1-4D9F-BEAA-FAEA5E0C6665}|Portfolio - Solution\\Portfolio - Solution.csproj|solutionrelative:portfolio - solution\\services\\aboutservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B244C50-C5C1-4D9F-BEAA-FAEA5E0C6665}|Portfolio - Solution\\Portfolio - Solution.csproj|d:\\portfolio - manimonisha\\portfolio - solution\\portfolio - solution\\repository\\iportfoliorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B244C50-C5C1-4D9F-BEAA-FAEA5E0C6665}|Portfolio - Solution\\Portfolio - Solution.csproj|solutionrelative:portfolio - solution\\repository\\iportfoliorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5B244C50-C5C1-4D9F-BEAA-FAEA5E0C6665}|Portfolio - Solution\\Portfolio - Solution.csproj|d:\\portfolio - manimonisha\\portfolio - solution\\portfolio - solution\\controller\\aboutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5B244C50-C5C1-4D9F-BEAA-FAEA5E0C6665}|Portfolio - Solution\\Portfolio - Solution.csproj|solutionrelative:portfolio - solution\\controller\\aboutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -15,20 +27,8 @@
       "RelativeMoniker": "D:0:0:{5B244C50-C5C1-4D9F-BEAA-FAEA5E0C6665}|Portfolio - Solution\\Portfolio - Solution.csproj|solutionrelative:portfolio - solution\\controller\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5B244C50-C5C1-4D9F-BEAA-FAEA5E0C6665}|Portfolio - Solution\\Portfolio - Solution.csproj|d:\\portfolio - manimonisha\\portfolio - solution\\portfolio - solution\\services\\aboutservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B244C50-C5C1-4D9F-BEAA-FAEA5E0C6665}|Portfolio - Solution\\Portfolio - Solution.csproj|solutionrelative:portfolio - solution\\services\\aboutservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5B244C50-C5C1-4D9F-BEAA-FAEA5E0C6665}|Portfolio - Solution\\Portfolio - Solution.csproj|d:\\portfolio - manimonisha\\portfolio - solution\\portfolio - solution\\services\\glimpsesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5B244C50-C5C1-4D9F-BEAA-FAEA5E0C6665}|Portfolio - Solution\\Portfolio - Solution.csproj|solutionrelative:portfolio - solution\\services\\glimpsesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5B244C50-C5C1-4D9F-BEAA-FAEA5E0C6665}|Portfolio - Solution\\Portfolio - Solution.csproj|d:\\portfolio - manimonisha\\portfolio - solution\\portfolio - solution\\repository\\portfoliorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B244C50-C5C1-4D9F-BEAA-FAEA5E0C6665}|Portfolio - Solution\\Portfolio - Solution.csproj|solutionrelative:portfolio - solution\\repository\\portfoliorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5B244C50-C5C1-4D9F-BEAA-FAEA5E0C6665}|Portfolio - Solution\\Portfolio - Solution.csproj|d:\\portfolio - manimonisha\\portfolio - solution\\portfolio - solution\\repository\\iportfoliorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B244C50-C5C1-4D9F-BEAA-FAEA5E0C6665}|Portfolio - Solution\\Portfolio - Solution.csproj|solutionrelative:portfolio - solution\\repository\\iportfoliorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5B244C50-C5C1-4D9F-BEAA-FAEA5E0C6665}|Portfolio - Solution\\Portfolio - Solution.csproj|d:\\portfolio - manimonisha\\portfolio - solution\\portfolio - solution\\services\\iaboutservice..cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -82,8 +82,16 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 7,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{56df62a4-05a3-4e5b-aa1a-99371ccfb997}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 7,
@@ -94,21 +102,19 @@
               "RelativeToolTip": "Portfolio - Solution\\Services\\IAboutService..cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-30T07:50:03.525Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-30T07:50:03.525Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "AboutService.cs",
               "DocumentMoniker": "D:\\Portfolio - Manimonisha\\Portfolio - Solution\\Portfolio - Solution\\Services\\AboutService.cs",
               "RelativeDocumentMoniker": "Portfolio - Solution\\Services\\AboutService.cs",
               "ToolTip": "D:\\Portfolio - Manimonisha\\Portfolio - Solution\\Portfolio - Solution\\Services\\AboutService.cs",
               "RelativeToolTip": "Portfolio - Solution\\Services\\AboutService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA8AAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-30T07:49:52.186Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-30T07:49:52.186Z"
             },
             {
               "$type": "Document",
@@ -120,44 +126,41 @@
               "RelativeToolTip": "Portfolio - Solution\\BusinessObject\\About.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-30T07:48:48.453Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-30T07:48:48.453Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "AboutController.cs",
               "DocumentMoniker": "D:\\Portfolio - Manimonisha\\Portfolio - Solution\\Portfolio - Solution\\Controller\\AboutController.cs",
               "RelativeDocumentMoniker": "Portfolio - Solution\\Controller\\AboutController.cs",
               "ToolTip": "D:\\Portfolio - Manimonisha\\Portfolio - Solution\\Portfolio - Solution\\Controller\\AboutController.cs",
               "RelativeToolTip": "Portfolio - Solution\\Controller\\AboutController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA2AAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-30T07:41:03.64Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-30T07:41:03.64Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "IPortfolioRepository.cs",
               "DocumentMoniker": "D:\\Portfolio - Manimonisha\\Portfolio - Solution\\Portfolio - Solution\\Repository\\IPortfolioRepository.cs",
               "RelativeDocumentMoniker": "Portfolio - Solution\\Repository\\IPortfolioRepository.cs",
               "ToolTip": "D:\\Portfolio - Manimonisha\\Portfolio - Solution\\Portfolio - Solution\\Repository\\IPortfolioRepository.cs",
               "RelativeToolTip": "Portfolio - Solution\\Repository\\IPortfolioRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAgAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-29T07:33:46.799Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-29T07:33:46.799Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "PortfolioRepository.cs",
               "DocumentMoniker": "D:\\Portfolio - Manimonisha\\Portfolio - Solution\\Portfolio - Solution\\Repository\\PortfolioRepository.cs",
               "RelativeDocumentMoniker": "Portfolio - Solution\\Repository\\PortfolioRepository.cs",
               "ToolTip": "D:\\Portfolio - Manimonisha\\Portfolio - Solution\\Portfolio - Solution\\Repository\\PortfolioRepository.cs",
               "RelativeToolTip": "Portfolio - Solution\\Repository\\PortfolioRepository.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAUwBUAAAApAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-29T07:33:30.808Z",
               "EditorCaption": ""
@@ -176,7 +179,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "GlimpsesService.cs",
               "DocumentMoniker": "D:\\Portfolio - Manimonisha\\Portfolio - Solution\\Portfolio - Solution\\Services\\GlimpsesService.cs",
               "RelativeDocumentMoniker": "Portfolio - Solution\\Services\\GlimpsesService.cs",
@@ -184,8 +187,7 @@
               "RelativeToolTip": "Portfolio - Solution\\Services\\GlimpsesService.cs",
               "ViewState": "AgIAAAEAAAAAAAAAAAAwwBMAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-28T20:20:36.678Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-28T20:20:36.678Z"
             },
             {
               "$type": "Document",
@@ -249,7 +251,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "LoginController.cs",
               "DocumentMoniker": "D:\\Portfolio - Manimonisha\\Portfolio - Solution\\Portfolio - Solution\\Controller\\LoginController.cs",
               "RelativeDocumentMoniker": "Portfolio - Solution\\Controller\\LoginController.cs",
@@ -257,8 +259,7 @@
               "RelativeToolTip": "Portfolio - Solution\\Controller\\LoginController.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAADwvxUAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-26T06:34:32.995Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-26T06:34:32.995Z"
             },
             {
               "$type": "Document",
@@ -282,12 +283,11 @@
               "RelativeToolTip": "Portfolio - Solution\\BusinessObject\\Glimpses.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-25T16:41:00.369Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-25T16:41:00.369Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "GlimpsesController.cs",
               "DocumentMoniker": "D:\\Portfolio - Manimonisha\\Portfolio - Solution\\Portfolio - Solution\\Controller\\GlimpsesController.cs",
               "RelativeDocumentMoniker": "Portfolio - Solution\\Controller\\GlimpsesController.cs",
@@ -295,8 +295,7 @@
               "RelativeToolTip": "Portfolio - Solution\\Controller\\GlimpsesController.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAABkAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-25T16:29:30.018Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-25T16:29:30.018Z"
             },
             {
               "$type": "Document",
@@ -309,6 +308,10 @@
               "ViewState": "AgIAAAgAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-25T13:54:55.237Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             }
           ]
         }

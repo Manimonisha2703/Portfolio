@@ -39,3 +39,4 @@ D:\Portfolio - Manimonisha\Portfolio - Solution\Portfolio - Solution\bin\Debug\n
 D:\Portfolio - Manimonisha\Portfolio - Solution\Portfolio - Solution\bin\Debug\net8.0\SharpCompress.dll
 D:\Portfolio - Manimonisha\Portfolio - Solution\Portfolio - Solution\bin\Debug\net8.0\Snappier.dll
 D:\Portfolio - Manimonisha\Portfolio - Solution\Portfolio - Solution\bin\Debug\net8.0\ZstdSharp.dll
+D:\Portfolio - Manimonisha\Portfolio - Solution\Portfolio - Solution\obj\Debug\net8.0\Portfolio - Solution.sourcelink.json
