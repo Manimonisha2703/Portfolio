@@ -1,0 +1,143 @@
+:host {
+  display: block;
+  width: 100%;
+  padding: 1.25rem 1.5rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.portfolio-header {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.25rem;
+  border-radius: 999px;
+  background: var(--surface-strong);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 14px 35px var(--shadow-strong);
+  color: var(--text-primary);
+  font-family: 'Poppins', 'Segoe UI', sans-serif;
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--text-primary);
+  text-decoration: none;
+}
+
+.menu-toggle {
+  display: none;
+  background: transparent;
+  border: 0;
+  padding: 0.2rem;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: var(--text-primary);
+  margin: 4px 0;
+  border-radius: 999px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.4rem;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.nav-links .nav-link {
+  text-decoration: none;
+  color: rgb(5 22 40 / 86%);
+  //color: rgba(248, 250, 252, 0.86);
+   
+  font-weight: 500;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.nav-links .hire-btn {
+  text-decoration: none;
+  color: rgba(248, 250, 252, 0.86);
+  font-weight: 500;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+
+
+.nav-links .nav-link:hover {
+  color: var(--accent);
+  transform: translateY(-1px);
+}
+
+.hire-btn {
+  padding: 0.72rem 1.15rem;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--accent) 0%, var(--accent-strong) 100%);
+  color: var(--text-primary);
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 8px 18px rgba(56, 189, 248, 0.25);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hire-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(56, 189, 248, 0.34);
+}
+
+@media (max-width: 768px) {
+  :host {
+    padding: 0.75rem 0.8rem 0;
+  }
+
+  .portfolio-header {
+    border-radius: 20px;
+    padding: 0.9rem 1rem;
+  }
+
+  .header-top {
+    width: 100%;
+  }
+
+  .menu-toggle {
+    display: inline-block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+    padding-top: 0.8rem;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links a {
+    font-size: 0.95rem;
+  }
+
+  .mobile-hire {
+    display: inline-flex;
+  }
+
+  .hire-btn:not(.mobile-hire) {
+    display: none;
+  }
+}

@@ -1,0 +1,16 @@
+<section class="skills-section" id="skills">
+  <div class="skills-header">
+    <p class="section-tag">Tech stack</p>
+    <h2>What I work with</h2>
+  </div>
+
+  <div class="skills-grid" *ngIf="skills.length">
+    <article class="skill-card" *ngFor="let skill of skills">
+      <h3>{{ skill.Category }}</h3>
+      <p class="skill-subtitle">{{ skill.Name }}</p>
+      <div class="skill-tags">
+        <span class="skill-tag" *ngFor="let item of skill.ActualSkill">{{ item }}</span>
+      </div>
+    </article>
+  </div>
+</section>

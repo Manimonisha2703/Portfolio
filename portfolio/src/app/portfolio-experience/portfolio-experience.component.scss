@@ -1,0 +1,122 @@
+:host {
+  display: block;
+  width: 100%;
+  padding: 2rem 1.5rem 4rem;
+}
+
+.experience-section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.experience-header {
+  margin-bottom: 2rem;
+}
+
+.section-tag {
+  display: inline-block;
+  margin: 0 0 0.8rem;
+  padding: 0.45rem 0.8rem;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.experience-header h2 {
+  margin: 0;
+  font-size: clamp(1.8rem, 3.3vw, 2.6rem);
+  line-height: 1.2;
+  color: var(--text-primary);
+}
+
+.experience-list {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.experience-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  padding: 1.35rem 1.5rem;
+  box-shadow: 0 12px 30px var(--shadow);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.experience-card:hover {
+  border-color: var(--accent);
+  box-shadow: 0 16px 36px rgba(15, 23, 42, 0.12);
+  transform: translateY(-2px);
+}
+
+.experience-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 0.9rem;
+}
+
+.experience-role {
+  margin: 0 0 0.25rem;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.experience-card h3 {
+  margin: 0;
+  color: var(--text-primary);
+  font-size: 1.1rem;
+}
+
+.experience-duration {
+  padding: 0.5rem 0.8rem;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: #175fbf;
+  border: 1px solid var(--accent-border);
+  font-size: 0.9rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.experience-bullets {
+  margin: 0 0 1rem 1.2rem;
+  padding: 0;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+.experience-bullets li + li {
+  margin-top: 0.35rem;
+}
+
+.experience-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+}
+
+.experience-tag {
+  padding: 0.6rem 0.85rem;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: #175fbf;
+  border: 1px solid var(--accent-border);
+  font-size: 0.92rem;
+  font-weight: 600;
+}
+
+@media (max-width: 700px) {
+  :host {
+    padding: 1.5rem 1rem 3rem;
+  }
+
+  .experience-top {
+    flex-direction: column;
+  }
+}
