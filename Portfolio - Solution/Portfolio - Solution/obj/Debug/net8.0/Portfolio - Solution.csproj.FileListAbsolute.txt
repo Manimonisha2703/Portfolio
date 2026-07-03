@@ -1,0 +1,41 @@
+D:\Portfolio - Manimonisha\Portfolio - Solution\Portfolio - Solution\obj\Debug\net8.0\Portfolio - Solution.csproj.AssemblyReference.cache
+D:\Portfolio - Manimonisha\Portfolio - Solution\Portfolio - Solution\obj\Debug\net8.0\rpswa.dswa.cache.json
+D:\Portfolio - Manimonisha\Portfolio - Solution\Portfolio - Solution\obj\Debug\net8.0\Portfolio - Solution.GeneratedMSBuildEditorConfig.editorconfig
+D:\Portfolio - Manimonisha\Portfolio - Solution\Portfolio - Solution\obj\Debug\net8.0\Portfolio - Solution.AssemblyInfoInputs.cache
+D:\Portfolio - Manimonisha\Portfolio - Solution\Portfolio - Solution\obj\Debug\net8.0\Portfolio - Solution.AssemblyInfo.cs
+D:\Portfolio - Manimonisha\Portfolio - Solution\Portfolio - Solution\obj\Debug\net8.0\Portfolio - Solution.csproj.CoreCompileInputs.cache
+D:\Portfolio - Manimonisha\Portfolio - Solution\Portfolio - Solution\obj\Debug\net8.0\Portfolio - Solution.MvcApplicationPartsAssemblyInfo.cs
+D:\Portfolio - Manimonisha\Portfolio - Solution\Portfolio - Solution\obj\Debug\net8.0\Portfolio - Solution.MvcApplicationPartsAssemblyInfo.cache
+D:\Portfolio - Manimonisha\Portfolio - Solution\Portfolio - Solution\bin\Debug\net8.0\appsettings.Development.json
+D:\Portfolio - Manimonisha\Portfolio - Solution\Portfolio - Solution\bin\Debug\net8.0\appsettings.json
+D:\Portfolio - Manimonisha\Portfolio - Solution\Portfolio - Solution\bin\Debug\net8.0\Portfolio - Solution.staticwebassets.endpoints.json
+D:\Portfolio - Manimonisha\Portfolio - Solution\Portfolio - Solution\bin\Debug\net8.0\Portfolio - Solution.exe
+D:\Portfolio - Manimonisha\Portfolio - Solution\Portfolio - Solution\bin\Debug\net8.0\Portfolio - Solution.deps.json
+D:\Portfolio - Manimonisha\Portfolio - Solution\Portfolio - Solution\bin\Debug\net8.0\Portfolio - Solution.runtimeconfig.json
+D:\Portfolio - Manimonisha\Portfolio - Solution\Portfolio - Solution\bin\Debug\net8.0\Portfolio - Solution.dll
+D:\Portfolio - Manimonisha\Portfolio - Solution\Portfolio - Solution\bin\Debug\net8.0\Portfolio - Solution.pdb
+D:\Portfolio - Manimonisha\Portfolio - Solution\Portfolio - Solution\bin\Debug\net8.0\Microsoft.OpenApi.dll
+D:\Portfolio - Manimonisha\Portfolio - Solution\Portfolio - Solution\bin\Debug\net8.0\MongoDB.Bson.dll
+D:\Portfolio - Manimonisha\Portfolio - Solution\Portfolio - Solution\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\Portfolio - Manimonisha\Portfolio - Solution\Portfolio - Solution\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Portfolio - Manimonisha\Portfolio - Solution\Portfolio - Solution\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Portfolio - Manimonisha\Portfolio - Solution\Portfolio - Solution\obj\Debug\net8.0\rjimswa.dswa.cache.json
+D:\Portfolio - Manimonisha\Portfolio - Solution\Portfolio - Solution\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+D:\Portfolio - Manimonisha\Portfolio - Solution\Portfolio - Solution\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+D:\Portfolio - Manimonisha\Portfolio - Solution\Portfolio - Solution\obj\Debug\net8.0\scopedcss\bundle\Portfolio - Solution.styles.css
+D:\Portfolio - Manimonisha\Portfolio - Solution\Portfolio - Solution\obj\Debug\net8.0\staticwebassets.build.json
+D:\Portfolio - Manimonisha\Portfolio - Solution\Portfolio - Solution\obj\Debug\net8.0\staticwebassets.build.json.cache
+D:\Portfolio - Manimonisha\Portfolio - Solution\Portfolio - Solution\obj\Debug\net8.0\staticwebassets.development.json
+D:\Portfolio - Manimonisha\Portfolio - Solution\Portfolio - Solution\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+D:\Portfolio - Manimonisha\Portfolio - Solution\Portfolio - Solution\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+D:\Portfolio - Manimonisha\Portfolio - Solution\Portfolio - Solution\obj\Debug\net8.0\Portfoli.C7AF7066.Up2Date
+D:\Portfolio - Manimonisha\Portfolio - Solution\Portfolio - Solution\obj\Debug\net8.0\Portfolio - Solution.dll
+D:\Portfolio - Manimonisha\Portfolio - Solution\Portfolio - Solution\obj\Debug\net8.0\refint\Portfolio - Solution.dll
+D:\Portfolio - Manimonisha\Portfolio - Solution\Portfolio - Solution\obj\Debug\net8.0\Portfolio - Solution.pdb
+D:\Portfolio - Manimonisha\Portfolio - Solution\Portfolio - Solution\obj\Debug\net8.0\Portfolio - Solution.genruntimeconfig.cache
+D:\Portfolio - Manimonisha\Portfolio - Solution\Portfolio - Solution\obj\Debug\net8.0\ref\Portfolio - Solution.dll
+D:\Portfolio - Manimonisha\Portfolio - Solution\Portfolio - Solution\bin\Debug\net8.0\DnsClient.dll
+D:\Portfolio - Manimonisha\Portfolio - Solution\Portfolio - Solution\bin\Debug\net8.0\MongoDB.Driver.dll
+D:\Portfolio - Manimonisha\Portfolio - Solution\Portfolio - Solution\bin\Debug\net8.0\SharpCompress.dll
+D:\Portfolio - Manimonisha\Portfolio - Solution\Portfolio - Solution\bin\Debug\net8.0\Snappier.dll
+D:\Portfolio - Manimonisha\Portfolio - Solution\Portfolio - Solution\bin\Debug\net8.0\ZstdSharp.dll

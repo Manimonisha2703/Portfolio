@@ -1,0 +1,74 @@
+[
+  {
+    "ContainingType": "Portfolio___Solution.Controller.GlimpsesController",
+    "Method": "AddGlimpses",
+    "RelativePath": "api/Glimpses/addGlimpses",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "glimpses",
+        "Type": "Portfolio___Solution.BusinessObject.Glimpses",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Portfolio___Solution.Controller.GlimpsesController",
+    "Method": "GetGlimpses",
+    "RelativePath": "api/Glimpses/GetGlimpses",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Portfolio___Solution.BusinessObject.Glimpses, Portfolio - Solution, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Portfolio___Solution.Controller.LoginController",
+    "Method": "LoginUser",
+    "RelativePath": "api/Login/ValidateUser",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loginObject",
+        "Type": "Portfolio___Solution.BusinessObject.LoginObject",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]
