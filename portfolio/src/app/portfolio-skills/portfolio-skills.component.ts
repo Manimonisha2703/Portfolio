@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { SkillsInfo } from 'src/Shared/portfolio.model';
+import { PortfolioAdminHttpService } from 'src/Shared/portfolio-admin-http.service';
+import { SkillsInfo, StackDetails } from 'src/Shared/portfolio.model';
 
 @Component({
   selector: 'app-portfolio-skills',
@@ -8,17 +9,27 @@ import { SkillsInfo } from 'src/Shared/portfolio.model';
 })
 export class PortfolioSkillsComponent implements OnInit {
 
-  skills : Array<SkillsInfo> = [];
+  skills : Array<StackDetails> = [];
 
-  constructor() { }
+  constructor(private portfolioAdminHttpService: PortfolioAdminHttpService) { }
 
   ngOnInit(): void {
-    this.skills.push({Category: "Languages", Name: "Typescript & C#", ActualSkill: ["Typescript", "C#", "JavaScript"]});
-    this.skills.push({Category: "Frameworks", Name: "Angular & .NET", ActualSkill: ["Angular", ".NET Core"]});
-    this.skills.push({Category: "Cloud & Devops", Name: "GCP & Azure", ActualSkill: ["GCP", "Azure", "CI/CD"]});
-    this.skills.push({Category: "Databases", Name: "SQL & MongoDB", ActualSkill: ["SQL Server", "MongoDB"]});
-    this.skills.push({Category: "Auth & API's", Name: "REST & OKTA", ActualSkill: ["REST API", "Okta SSO"]});
-    this.skills.push({Category: "Libraries and Tools", Name: "primeNG and More", ActualSkill: ["PrimeNG", "Hangfire", "EF core"]});
+    this.getStack();
+  }
+
+  getStack(){
+    this.portfolioAdminHttpService.getStack().subscribe({
+      next : (stack: Array<StackDetails>) => {
+        stack.forEach(element => {
+          const tempStack = {
+            stackType : element.stackType,
+            stackHeading : element.stackHeading,
+            stackList: element.stackList
+          }
+          this.skills.push(tempStack);
+        });
+      }
+    })
   }
 
 }

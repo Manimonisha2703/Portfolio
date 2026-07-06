@@ -3,22 +3,22 @@ using Portfolio___Solution.Repository;
 
 namespace Portfolio___Solution.Services
 {
-    public class AboutService : IAboutService
+    public class ProjectService : IProjectService
     {
         private readonly IPortfolioRepository portfolioRepository;
-        public AboutService(IPortfolioRepository portfolioRepository)
+        public ProjectService(IPortfolioRepository portfolioRepository)
         {
             this.portfolioRepository = portfolioRepository;
         }
 
-        public void AddAbout(About about)
+        public void AddProjects(Project project)
         {
-            this.portfolioRepository.AddAbout(about);
+            this.portfolioRepository.AddProject(project);
         }
 
-        public List<About> GetAboutKeyword()
+        public List<Project> GetProjects()
         {
-            return this.portfolioRepository.GetAboutKeyword();
+            return this.portfolioRepository.GetProjects();
         }
     }
 }

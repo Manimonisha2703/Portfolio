@@ -8,20 +8,26 @@ namespace Portfolio___Solution.Controller
     [Route("api/[Controller]")]
     public class AboutController : ControllerBase
     {
-        private readonly AboutService aboutService;
-        public AboutController(AboutService aboutService)
+        private readonly IAboutService aboutService;
+        public AboutController(IAboutService aboutService)
         {
             this.aboutService = aboutService;
         }
 
-        [HttpPost("addAboutDesc")]
-        public ActionResult<string> PostAboutDescription([FromBody] string description)
+        [HttpPost("addAboutkeyword")]
+        public ActionResult<string> PostAboutKeyword([FromBody] About about)
         {
-            this.aboutService.AddAbout(description);
+            this.aboutService.AddAbout(about);
             return Ok(new
             {
                 response = "successfully added"
             });
+        }
+
+        [HttpGet("getAboutKeyWord")]
+        public ActionResult<List<About>> GetAboutKeyword()
+        {
+           return this.aboutService.GetAboutKeyword();
         }
     }
 }

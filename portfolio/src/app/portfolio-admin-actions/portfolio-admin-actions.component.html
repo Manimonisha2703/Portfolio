@@ -11,3 +11,39 @@
     <input type="text" [(ngModel)]="glimpsesDescription" />
     <button (click)="addGlimpses()">Add Glimpses</button>
 </div>
+
+<div> 
+    <h2>Add about Keywords</h2>
+    <Label for="AboutValue">Value</Label>
+    <input type="text" [(ngModel)]="aboutValue" />
+    <button (click)="addAboutKeywords()">Add About Keyword</button>
+</div>
+
+<div>
+  <h2>Add tech stack</h2>
+  <input type="text" [(ngModel)]="stackType" placeholder="Stack type"/>
+  <input type="text" [(ngModel)] = "stackHeading" placeholder="Stack overall"/>
+  <input type="text" [(ngModel)]="currTechnology" placeholder="Technology" />
+  <button (click)="addTechnology()">Add technology</button>
+  <button (click)="addStack()">Add stack</button>
+</div>
+
+<div>
+  <h2>Add experience</h2>
+  <input type="text" [(ngModel)]="roleVal" placeholder="Enter role"/>
+  <input type="text" [(ngModel)]="companyName" placeholder="Enter company Name"/>
+  <input type="text" [(ngModel)]="durationVal" placeholder="Enter duration"/>
+  <input type="text" [(ngModel)]="workDescription" placeholder="Enter description"/>
+  <button (click)="addDescription()">Add work decription</button>
+  <input type="text" [(ngModel)]="techDetails" placeholder="Enter description"/>
+  <button (click)="addTechUsed()">Add techs used</button>
+  <button (click)="addWorkExperience()">Add Work experience</button>
+</div>
+
+<div>
+  <h2>Things I have shipped</h2>
+  <input type="text" placeholder="Feature name" [(ngModel)]="featureName"/>
+  <input type="text" placeholder="Feature description" [(ngModel)]="featureDescription"/>
+  <input type="text" placeholder="Feature highlight" [(ngModel)] = "featureHighlight"/>
+  <button (click)="addFeature()">Add Feature</button>
+</div>

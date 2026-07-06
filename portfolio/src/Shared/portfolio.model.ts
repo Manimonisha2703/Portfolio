@@ -1,6 +1,6 @@
 export class GlimpsesInfo {
-    Value: string;
-    Description: string;
+    value: string;
+    description: string;
 }
 
 export class SkillsInfo {
@@ -10,18 +10,17 @@ export class SkillsInfo {
 }
 
 export class ProjectInfo {
-    Name: string;
-    Description: string;
-    Highlight?: string;
-    Technologies: string[];
+    name: string;
+    description: string;
+    highlight?: string;
 }
 
 export class ExperienceInfo {
-    Role: string;
-    Company: string;
-    Duration: string;
-    WorkDescription : Array<string>;
-    Technologies: Array<string>;
+    role: string;
+    company: string;
+    duration: string;
+    workDescription : Array<string>;
+    technologies: Array<string>;
 }
 export class LoginInfo {
     UserName: string;
@@ -29,4 +28,14 @@ export class LoginInfo {
 }
 export class LoginResponse {
     token: string;
+}
+
+export class AboutInfo{
+    aboutKeyword: string;
+}
+
+export class StackDetails {
+    stackType: string;
+    stackHeading: string;
+    stackList: Array<string>
 }

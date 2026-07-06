@@ -6,12 +6,9 @@
 
   <div class="projects-grid" *ngIf="projects.length">
     <article class="project-card" *ngFor="let project of projects">
-      <h3>{{ project.Name }}</h3>
-      <p class="project-description">{{ project.Description }}</p>
-      <p class="project-highlight" *ngIf="project.Highlight">{{ project.Highlight }}</p>
-      <div class="project-tags">
-        <span class="project-tag" *ngFor="let tech of project.Technologies">{{ tech }}</span>
-      </div>
+      <h3>{{ project.name }}</h3>
+      <p class="project-description">{{ project.description }}</p>
+      <p class="project-highlight" *ngIf="project.highlight">{{ project.highlight }}</p>
     </article>
   </div>
 </section>

@@ -11,6 +11,10 @@ namespace Portfolio___Solution
             service.AddScoped<ILoginService, LoginService>();
             service.AddScoped<IGlimpsesService, GlimpsesService>();
             service.AddScoped<IPortfolioRepository, PortfolioRepository>();
+            service.AddScoped<IAboutService, AboutService>();
+            service.AddScoped<IStackService, StackService>();
+            service.AddScoped<IExperienceService, ExperienceService>();
+            service.AddScoped<IProjectService, ProjectService>();
         }
     }
 }

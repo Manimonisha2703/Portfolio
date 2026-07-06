@@ -1,21 +1,87 @@
 [
   {
     "ContainingType": "Portfolio___Solution.Controller.AboutController",
-    "Method": "PostAboutDescription",
-    "RelativePath": "api/About/addAboutDesc",
+    "Method": "PostAboutKeyword",
+    "RelativePath": "api/About/addAboutkeyword",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "description",
-        "Type": "System.String",
+        "Name": "about",
+        "Type": "Portfolio___Solution.BusinessObject.About",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
         "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Portfolio___Solution.Controller.AboutController",
+    "Method": "GetAboutKeyword",
+    "RelativePath": "api/About/getAboutKeyWord",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Portfolio___Solution.BusinessObject.About, Portfolio - Solution, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Portfolio___Solution.Controller.ExperienceController",
+    "Method": "AddExperience",
+    "RelativePath": "api/Experience/AddExperience",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "experience",
+        "Type": "Portfolio___Solution.BusinessObject.Experience",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Portfolio___Solution.Controller.ExperienceController",
+    "Method": "GetExperience",
+    "RelativePath": "api/Experience/GetExperience",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Portfolio___Solution.BusinessObject.Experience, Portfolio - Solution, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -88,6 +154,98 @@
     "ReturnTypes": [
       {
         "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Portfolio___Solution.Controller.ProjectController",
+    "Method": "AddProject",
+    "RelativePath": "api/Project/AddProjects",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "project",
+        "Type": "Portfolio___Solution.BusinessObject.Project",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Portfolio___Solution.Controller.ProjectController",
+    "Method": "GetProjects",
+    "RelativePath": "api/Project/GetProjects",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Portfolio___Solution.BusinessObject.Project, Portfolio - Solution, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Portfolio___Solution.Controller.StackController",
+    "Method": "AddStack",
+    "RelativePath": "api/Stack/AddStack",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "stackVal",
+        "Type": "Portfolio___Solution.BusinessObject.Stack",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Portfolio___Solution.Controller.StackController",
+    "Method": "GetStack",
+    "RelativePath": "api/Stack/GetStack",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Portfolio___Solution.BusinessObject.Stack, Portfolio - Solution, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
