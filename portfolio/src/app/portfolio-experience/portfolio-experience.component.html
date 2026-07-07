@@ -6,16 +6,31 @@
 
   <div class="experience-list" *ngIf="experiences.length">
     <article class="experience-card" *ngFor="let experience of experiences">
-      <div class="experience-top">
-        <div>
-          <p class="experience-role">{{ experience.role }}</p>
-          <h3>{{ experience.company }}</h3>
+      <div class="experience-card__top">
+        <div class="experience-card__head">
+          <span *ngIf="experience.icon && experience.icon.indexOf('http') === 0" class="experience-card__logo">
+            <img [src]="experience.icon" [alt]="experience.company + ' logo'" />
+          </span>
+          <span *ngIf="!experience.icon || experience.icon.indexOf('http') !== 0" class="experience-card__logo">
+            {{ experience.icon || '🛡️' }}
+          </span>
+          <div>
+            <p class="experience-role">{{ experience.role }}</p>
+            <h3>{{ experience.company }}</h3>
+          </div>
         </div>
-        <span class="experience-duration">{{ experience.duration }}</span>
+
+        <div class="experience-card__meta">
+          <span class="experience-current" *ngIf="experience.duration?.toLowerCase().includes('present')">current</span>
+          <span class="experience-duration">{{ experience.duration }}</span>
+        </div>
       </div>
 
       <ul class="experience-bullets">
-        <li *ngFor="let work of experience.workDescription">{{ work }}</li>
+        <li *ngFor="let work of experience.workDescription">
+          <span class="experience-bullet-icon"></span>
+          <span>{{ work }}</span>
+        </li>
       </ul>
 
       <div class="experience-tags">

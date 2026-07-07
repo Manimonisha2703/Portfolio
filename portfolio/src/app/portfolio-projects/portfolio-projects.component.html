@@ -8,7 +8,12 @@
     <article class="project-card" *ngFor="let project of projects">
       <h3>{{ project.name }}</h3>
       <p class="project-description">{{ project.description }}</p>
+
       <p class="project-highlight" *ngIf="project.highlight">{{ project.highlight }}</p>
+
+      <div class="project-tags" *ngIf="project.tags?.length">
+        <span class="project-tag" *ngFor="let t of project.tags">{{ t }}</span>
+      </div>
     </article>
   </div>
 </section>

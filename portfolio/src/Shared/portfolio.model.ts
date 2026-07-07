@@ -13,6 +13,8 @@ export class ProjectInfo {
     name: string;
     description: string;
     highlight?: string;
+    icon?: string; // emoji or image URL
+    tags?: Array<string>;
 }
 
 export class ExperienceInfo {
@@ -21,6 +23,7 @@ export class ExperienceInfo {
     duration: string;
     workDescription : Array<string>;
     technologies: Array<string>;
+    icon?: string; // optional emoji character or image URL
 }
 export class LoginInfo {
     UserName: string;

@@ -1,0 +1,20 @@
+:host {
+  display: block;
+}
+
+:host > * {
+  display: block;
+  width: 100%;
+}
+
+:host > app-portfolio-home {
+  background: transparent !important;
+}
+
+:host > *:nth-child(odd) {
+  background: var(--surface);
+}
+
+:host > *:nth-child(even) {
+  background: var(--section-alt);
+}
