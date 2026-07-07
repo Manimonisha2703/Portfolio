@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  apiUrl: 'https://localhost:7132/api'
+  apiUrl: 'https://monisha-portfolio-api-d3exauhrh6bpdvd4.southindia-01.azurewebsites.net/api'
 };
 
 /*
