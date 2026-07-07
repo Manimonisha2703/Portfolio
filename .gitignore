@@ -1,0 +1,16 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+# ---------- .NET ----------
+**/bin/
+**/obj/
+**/.vs/
+**/.vscode/
+
+# ---------- Angular ----------
+**/dist/
+
+# ---------- Logs ----------
+*.log
+
+# ---------- OS ----------
+.DS_Store
+Thumbs.db
