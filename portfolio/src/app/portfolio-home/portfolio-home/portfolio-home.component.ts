@@ -16,8 +16,9 @@ interface GlimpseDisplay {
 })
 export class PortfolioHomeComponent implements OnInit, OnDestroy {
 
-  glimpses: Array<GlimpsesInfo> = [];
+  glimpses : Array<GlimpsesInfo> = [];
   glimpseDisplays: Array<GlimpseDisplay> = [];
+  enableOpentoWork: boolean = false;
 
   private timers: any[] = [];
 

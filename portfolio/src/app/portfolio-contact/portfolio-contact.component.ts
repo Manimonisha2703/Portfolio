@@ -9,6 +9,8 @@ export class PortfolioContactComponent implements OnInit {
 
   constructor() { }
 
+  enableOpentoWork: boolean = false;
+
   ngOnInit(): void {
   }
 
