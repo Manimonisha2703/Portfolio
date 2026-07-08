@@ -1,13 +1,12 @@
 :host {
   display: block;
   width: 100%;
-  padding: 9rem 1.5rem 9rem;
 }
 
 .contact-section {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 9rem 1.5rem 9rem;
+  padding: 7rem 0 5rem;
 }
 
 .contact-card {
@@ -77,13 +76,15 @@
   position: relative;
   width: min(720px, 100%);
   margin: 1.6rem auto 2rem;
-  padding: 1.2rem 1.5rem;
+  padding: 1rem 1.2rem;
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.16);
   border: 1px solid rgba(255, 255, 255, 0.28);
   backdrop-filter: blur(12px);
   display: flex;
   justify-content: center;
+  align-items: center;
+  text-align: center;
   z-index: 1;
 }
 
@@ -93,6 +94,9 @@
   font-weight: 700;
   text-decoration: none;
   display: inline-block;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+  line-height: 1.5;
 }
 
 .contact-links {
@@ -147,6 +151,11 @@
   .contact-card {
     border-radius: 32px;
     padding: 2.2rem 1.25rem;
+  }
+
+  .contact-email-card {
+    border-radius: 24px;
+    padding: 0.95rem 1rem;
   }
 
   .contact-links {
