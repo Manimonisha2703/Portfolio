@@ -5,11 +5,13 @@
   </div>
 
   <div class="skills-grid" *ngIf="skills.length">
-    <article class="skill-card" *ngFor="let skill of skills">
+    <article class="skill-card" #skillCard *ngFor="let skill of skills; let i = index"
+             [style.--card-index]="i">
       <h3>{{ skill.stackType }}</h3>
       <p class="skill-subtitle">{{ skill.stackHeading }}</p>
       <div class="skill-tags">
-        <span class="skill-tag" *ngFor="let item of skill.stackList">{{ item }}</span>
+        <span class="skill-tag" *ngFor="let item of skill.stackList; let j = index"
+              [style.--tag-index]="j">{{ item }}</span>
       </div>
     </article>
   </div>

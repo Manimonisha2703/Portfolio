@@ -15,9 +15,10 @@
 
   <div class="hero-panel">
 
-    <div class="hero-stats" *ngIf="glimpses.length">
-      <div class="stat-card" *ngFor="let info of glimpses">
-        <strong>{{ info.value }}</strong>
+    <div class="hero-stats" *ngIf="glimpseDisplays.length">
+      <div class="stat-card" *ngFor="let info of glimpseDisplays; let i = index"
+           [style.animation-delay]="(i * 150) + 'ms'">
+        <strong>{{ info.displayValue }}</strong>
         <span>{{ info.description }}</span>
       </div>
     </div>

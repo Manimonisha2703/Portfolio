@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit, QueryList, ViewChildren, ElementRef, OnDestroy } from '@angular/core';
 import { PortfolioAdminHttpService } from 'src/Shared/portfolio-admin-http.service';
 import { ExperienceInfo } from 'src/Shared/portfolio.model';
 
@@ -7,59 +7,43 @@ import { ExperienceInfo } from 'src/Shared/portfolio.model';
   templateUrl: './portfolio-experience.component.html',
   styleUrls: ['./portfolio-experience.component.scss']
 })
-export class PortfolioExperienceComponent implements OnInit {
+export class PortfolioExperienceComponent implements OnInit, AfterViewInit, OnDestroy {
 
-  experiences : Array<ExperienceInfo> = [];
+  experiences: Array<ExperienceInfo> = [];
+
+  @ViewChildren('experienceCard') experienceCardRefs!: QueryList<ElementRef>;
+
+  private observer!: IntersectionObserver;
 
   constructor(private portfolioAdminHttpService: PortfolioAdminHttpService) { }
 
   ngOnInit(): void {
-    // this.experiences.push({
-    //   Role: "Software Engineer",
-    //   Company: "XYZ Technologies",
-    //   Duration: "Jan 2020 - Present",
-    //   WorkDescription: [
-    //     "Developed and maintained web applications using Angular and .NET Core.",
-    //     "Collaborated with cross-functional teams to define, design, and ship new features.",
-    //     "Optimized applications for maximum speed and scalability."
-    //   ],
-    //   Technologies: ["Angular", ".NET Core", "C#", "SQL Server"]
-    // });
-    // this.experiences.push({
-    //   Role: "Associate Software Engineer",
-    //   Company: "XYZ Technologies",
-    //   Duration: "Jan 2020 - Present",
-    //   WorkDescription: [
-    //     "Developed and maintained web applications using Angular and .NET Core.",
-    //     "Collaborated with cross-functional teams to define, design, and ship new features.",
-    //     "Optimized applications for maximum speed and scalability."
-    //   ],
-    //   Technologies: ["Angular", ".NET Core", "C#", "SQL Server"]
-    // });
-    // this.experiences.push({
-    //   Role: "Trainee",
-    //   Company: "XYZ Technologies",
-    //   Duration: "Jan 2020 - Present",
-    //   WorkDescription: [
-    //     "Developed and maintained web applications using Angular and .NET Core.",
-    //     "Collaborated with cross-functional teams to define, design, and ship new features.",
-    //     "Optimized applications for maximum speed and scalability."
-    //   ],
-    //   Technologies: ["Angular", ".NET Core", "C#", "SQL Server"]
-    // });
-    // this.experiences.push({
-    //   Role: "Intern",
-    //   Company: "XYZ Technologies",
-    //   Duration: "Jan 2020 - Present",
-    //   WorkDescription: [
-    //     "Developed and maintained web applications using Angular and .NET Core.",
-    //     "Collaborated with cross-functional teams to define, design, and ship new features.",
-    //     "Optimized applications for maximum speed and scalability."
-    //   ],
-    //   Technologies: ["Angular", ".NET Core", "C#", "SQL Server"]
-    // });
-
     this.getWorkExperience();
+  }
+
+  ngAfterViewInit(): void {
+    this.observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('tags-visible');
+            this.observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0, rootMargin: '0px 0px 0px 0px' }
+    );
+
+    this.experienceCardRefs.changes.subscribe(() => this.observeCards());
+    this.observeCards();
+  }
+
+  private observeCards(): void {
+    this.experienceCardRefs.forEach(ref => this.observer.observe(ref.nativeElement));
+  }
+
+  ngOnDestroy(): void {
+    if (this.observer) this.observer.disconnect();
   }
 
   getWorkExperience() {
@@ -72,12 +56,11 @@ export class PortfolioExperienceComponent implements OnInit {
             duration: exp.duration,
             workDescription: exp.workDescription,
             technologies: exp.technologies
-          }
-
+          };
           this.experiences.push(tempExp);
-        })
+        });
       }
-    })
+    });
   }
 
 }

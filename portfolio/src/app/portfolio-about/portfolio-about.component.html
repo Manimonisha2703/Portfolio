@@ -5,9 +5,12 @@
     <p class="description" [innerHTML]="selfDescription"></p>
   </div>
 
-  <div class="about-card">
+  <div class="about-card" #aboutCard>
     <div class="skills-list" *ngIf="keywords?.length">
-      <span class="skill-pill" *ngFor="let key of keywords">{{ key }}</span>
+      <span class="skill-pill" *ngFor="let key of visibleKeywords">{{ key }}</span>
+      <span class="skill-pill skill-pill--ghost"
+            *ngFor="let key of keywords.slice(visibleKeywords.length)">
+      </span>
     </div>
   </div>
 </section>
