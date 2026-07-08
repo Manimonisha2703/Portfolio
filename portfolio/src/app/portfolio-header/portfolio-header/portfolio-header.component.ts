@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -12,6 +12,13 @@ export class PortfolioHeaderComponent implements OnInit {
   constructor(private router: Router) { }
 
   ngOnInit(): void {
+  }
+
+  @HostListener('window:scroll')
+  onWindowScroll(): void {
+    if (this.isMenuOpen) {
+      this.isMenuOpen = false;
+    }
   }
 
   toggleMenu(): void {
