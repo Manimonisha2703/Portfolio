@@ -9,10 +9,10 @@
   </div>
 
   <nav class="nav-links" [class.open]="isMenuOpen" aria-label="Primary navigation">
-    <a class="nav-link" href="#about" (click)="closeMenu()">About</a>
-    <a class="nav-link" href="#skills" (click)="closeMenu()">Skills</a>
-    <a class="nav-link" href="#experience" (click)="closeMenu()">Experience</a>
-    <a class="nav-link" href="#projects" (click)="closeMenu()">Projects</a>
-    <a class="nav-link" href="#contact" (click)="closeMenu()">Contact</a>
+    <a class="nav-link" href="#about"      (click)="scrollTo($event, 'about')">About</a>
+    <a class="nav-link" href="#skills"     (click)="scrollTo($event, 'skills')">Skills</a>
+    <a class="nav-link" href="#experience" (click)="scrollTo($event, 'experience')">Experience</a>
+    <a class="nav-link" href="#projects"   (click)="scrollTo($event, 'projects')">Projects</a>
+    <a class="nav-link" href="#contact"    (click)="scrollTo($event, 'contact')">Contact</a>
   </nav>
 </header>
