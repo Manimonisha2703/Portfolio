@@ -2,9 +2,9 @@
   <div class="contact-card">
     <span class="contact-chip">+ say hello</span>
 
-    <h2>Open to new opportunities</h2>
+    <h2 *ngFor="enableOpentoWork">Open to new opportunities</h2>
 
-    <p class="contact-copy">Looking for full stack roles where Angular meets .NET Core.</p>
+    <p class="contact-copy" *ngFor="enableOpentoWork">Looking for full stack roles where Angular meets .NET Core.</p>
     <p class="contact-copy">Let’s build something great together.</p>
 
     <div class="contact-email-card">
