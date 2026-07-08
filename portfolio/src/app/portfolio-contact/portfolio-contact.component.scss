@@ -106,6 +106,7 @@
   justify-content: center;
   gap: 1rem;
   z-index: 1;
+  cursor: pointer;
 }
 
 .contact-link {
@@ -160,6 +161,9 @@
 
   .contact-links {
     flex-direction: column;
+    .Resume:hover {
+      cursor: pointer;
+    }
   }
 
   .contact-link {
