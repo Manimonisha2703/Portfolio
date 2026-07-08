@@ -23,6 +23,25 @@
   overflow: hidden;
 }
 
+/* children start hidden */
+.contact-card > * {
+  opacity: 0;
+  transform: translateY(24px);
+}
+
+/* when card is visible, stagger each child in */
+.contact-card.visible > * {
+  animation: contactFadeUp 0.55s ease both;
+  animation-delay: calc(var(--item-index, 0) * 120ms + 0.1s);
+}
+
+@keyframes contactFadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .contact-card::before {
   content: '';
   position: absolute;
@@ -70,6 +89,13 @@
   text-align: center;
   max-width: 720px;
   z-index: 1;
+}
+
+.contact-copy--greeting {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.95);
+  max-width: 600px;
+  font-style: italic;
 }
 
 .contact-email-card {

@@ -1,17 +1,28 @@
 <section class="contact-section" id="contact">
-  <div class="contact-card">
-    <span class="contact-chip">+ say hello</span>
+  <div class="contact-card" #contactCard>
+    <span class="contact-chip" style="--item-index: 0">+ say hello</span>
 
-    <h2 *ngFor="enableOpentoWork">Open to new opportunities</h2>
+    <!-- open to work state -->
+    <ng-container *ngIf="enableOpentoWork">
+      <h2 style="--item-index: 1">Open to new opportunities</h2>
+      <p class="contact-copy" style="--item-index: 2">Looking for full stack roles where Angular meets .NET Core.</p>
+      <p class="contact-copy" style="--item-index: 3">Let's build something great together.</p>
+    </ng-container>
 
-    <p class="contact-copy" *ngFor="enableOpentoWork">Looking for full stack roles where Angular meets .NET Core.</p>
-    <p class="contact-copy">Let’s build something great together.</p>
+    <!-- not actively looking state -->
+    <ng-container *ngIf="!enableOpentoWork">
+      <h2 style="--item-index: 1">Let's stay in touch</h2>
+      <p class="contact-copy contact-copy--greeting" style="--item-index: 2">
+        I'm currently heads-down building great things — but I'm always happy to connect, collaborate, or just have a good conversation about tech.
+      </p>
+      <p class="contact-copy" style="--item-index: 3">Drop me a message. I read every one.</p>
+    </ng-container>
 
-    <div class="contact-email-card">
+    <div class="contact-email-card" style="--item-index: 4">
       <a class="contact-email" href="mailto:manimonisha2703@gmail.com">manimonisha2703@gmail.com</a>
     </div>
 
-    <div class="contact-links">
+    <div class="contact-links" style="--item-index: 5">
       <a class="contact-link" href="https://www.linkedin.com/in/manimonisha-p-187503194/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
       <a class="contact-link" href="tel:+918870003613">+91 88700 03613</a>
       <a class="contact-link" href="https://github.com/Manimonisha2703" target="_blank" rel="noopener noreferrer">GitHub</a>
