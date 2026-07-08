@@ -21,7 +21,7 @@ export class PortfolioAboutComponent implements OnInit, AfterViewInit, OnDestroy
   constructor(private portfolioAdminHttpService: PortfolioAdminHttpService) { }
 
   ngOnInit(): void {
-    this.selfDescription = "I'm a full stack developer with <strong>3.5+ years</strong> building enterprise-grade apps at DucenIt, Chennai — Angular UIs to .NET APIs to cloud data pipelines. <br><br> My sweet spot is the messy middle most developers avoid — <strong>authentication, API design,</strong> and cloud architecture. I've shipped Okta SSO, built REST connectors for ServiceNow, cut cloud costs 40% via GCP filtering, and built a full AI product UI solo. <br><br> I also run KT sessions for my team — because <strong>good code is only half the job.</strong>";
+    this.selfDescription = "I'm a full stack developer with <strong>3.5+ years</strong> building enterprise-grade apps at Orion Innovtion, Chennai — Angular UIs to .NET APIs to cloud data pipelines. <br><br> My sweet spot is the messy middle most developers avoid — <strong>authentication, API design,</strong> and cloud architecture. I've shipped Okta SSO, built REST connectors for ServiceNow, cut cloud costs 40% via GCP filtering, and built a full AI product UI solo. <br><br> I also run KT sessions for my team — because <strong>good code is only half the job.</strong>";
     this.getAboutKeyWords();
   }
 

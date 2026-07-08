@@ -8,6 +8,7 @@ import { Router } from '@angular/router';
 })
 export class PortfolioHeaderComponent implements OnInit {
   isMenuOpen = false;
+  isProd = true;
   private scrollCloseEnabled = false;
 
   constructor(private router: Router) { }
@@ -39,6 +40,9 @@ export class PortfolioHeaderComponent implements OnInit {
   }
 
   openAdminLogin() {
+    if(this.isProd) {
+      return
+    }
     this.router.navigate(['/admin-login']);
   }
 }
