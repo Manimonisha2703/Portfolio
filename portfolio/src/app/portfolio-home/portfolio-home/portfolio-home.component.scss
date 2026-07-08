@@ -122,6 +122,10 @@
   color: #e9ebef;
 }
 
+.stack-break {
+  display: inline;
+}
+
 .description {
   margin: 0 0 2.25rem;
   max-width: 660px;
@@ -280,6 +284,11 @@
   .hero-copy h2 {
     font-size: 1rem;
     margin: 0.8rem 0 1.2rem;
+  }
+
+  .stack-break {
+    display: block;
+    margin-top: 0.25rem;
   }
 
   .description {
