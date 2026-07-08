@@ -53,14 +53,41 @@
   box-shadow: 0 28px 80px rgba(124, 58, 237, 0.12);
   min-height: 420px;
   overflow: hidden;
-  transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1),
-              box-shadow 0.35s ease;
   cursor: default;
+
+  /* scroll entrance — start hidden */
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.55s ease,
+              transform 0.55s cubic-bezier(0.34, 1.56, 0.64, 1),
+              box-shadow 0.35s ease;
+  transition-delay: calc(var(--card-index, 0) * 110ms);
 }
 
-.project-card:hover {
+.project-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.project-card.visible:hover {
   transform: translateY(-8px) scale(1.025);
   box-shadow: 0 50px 110px rgba(124, 58, 237, 0.25);
+}
+
+/* tags stagger in after the card lands */
+.project-card.visible .project-tag {
+  animation: tagPopIn 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+  animation-delay: calc(
+    (var(--card-index, 0) * 110ms) +
+    0.3s +
+    (var(--tag-index, 0) * 70ms)
+  );
+}
+
+/* highlight badge — slides in from the left with a glow pulse */
+.project-card.visible .project-highlight {
+  animation: highlightSlideIn 0.6s cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation-delay: calc((var(--card-index, 0) * 110ms) + 0.45s);
 }
 
 .project-card > * {
@@ -126,6 +153,9 @@
   background: rgba(255,255,255,0.12);
   color: #fff;
   font-weight: 700;
+  /* start hidden */
+  opacity: 0;
+  transform: translateX(-18px);
 }
 
 .project-tags {
@@ -142,6 +172,31 @@
   color: #fff;
   font-size: 0.95rem;
   font-weight: 700;
+  /* start hidden */
+  opacity: 0;
+  transform: scale(0.7) translateY(6px);
+}
+
+@keyframes tagPopIn {
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes highlightSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-18px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateX(4px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 /* icon removed per user request */

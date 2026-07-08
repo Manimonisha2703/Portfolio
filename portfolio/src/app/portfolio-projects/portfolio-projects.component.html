@@ -5,14 +5,16 @@
   </div>
 
   <div class="projects-grid" *ngIf="projects.length">
-    <article class="project-card" *ngFor="let project of projects">
+    <article class="project-card" #projectCard *ngFor="let project of projects; let i = index"
+             [style.--card-index]="i">
       <h3>{{ project.name }}</h3>
       <p class="project-description">{{ project.description }}</p>
 
       <p class="project-highlight" *ngIf="project.highlight">{{ project.highlight }}</p>
 
       <div class="project-tags" *ngIf="project.tags?.length">
-        <span class="project-tag" *ngFor="let t of project.tags">{{ t }}</span>
+        <span class="project-tag" *ngFor="let t of project.tags; let j = index"
+              [style.--tag-index]="j">{{ t }}</span>
       </div>
     </article>
   </div>
