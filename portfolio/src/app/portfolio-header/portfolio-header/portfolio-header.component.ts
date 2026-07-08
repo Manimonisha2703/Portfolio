@@ -8,6 +8,7 @@ import { Router } from '@angular/router';
 })
 export class PortfolioHeaderComponent implements OnInit {
   isMenuOpen = false;
+  private scrollCloseEnabled = false;
 
   constructor(private router: Router) { }
 
@@ -16,17 +17,25 @@ export class PortfolioHeaderComponent implements OnInit {
 
   @HostListener('window:scroll')
   onWindowScroll(): void {
-    if (this.isMenuOpen) {
+    if (this.isMenuOpen && this.scrollCloseEnabled) {
       this.isMenuOpen = false;
+      this.scrollCloseEnabled = false;
     }
   }
 
   toggleMenu(): void {
     this.isMenuOpen = !this.isMenuOpen;
+    this.scrollCloseEnabled = false;
+    if (this.isMenuOpen) {
+      setTimeout(() => {
+        this.scrollCloseEnabled = true;
+      }, 300);
+    }
   }
 
   closeMenu(): void {
     this.isMenuOpen = false;
+    this.scrollCloseEnabled = false;
   }
 
   openAdminLogin() {
