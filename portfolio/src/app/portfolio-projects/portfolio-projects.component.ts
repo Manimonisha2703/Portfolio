@@ -31,7 +31,7 @@ export class PortfolioProjectsComponent implements OnInit, AfterViewInit, OnDest
           }
         });
       },
-      { threshold: 0.1 }
+      { threshold: 0, rootMargin: '0px 0px -60px 0px' }
     );
 
     this.projectCardRefs.changes.subscribe(() => this.observeCards());

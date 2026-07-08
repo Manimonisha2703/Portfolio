@@ -31,7 +31,7 @@ export class PortfolioExperienceComponent implements OnInit, AfterViewInit, OnDe
           }
         });
       },
-      { threshold: 0.15 }
+      { threshold: 0, rootMargin: '0px 0px 0px 0px' }
     );
 
     this.experienceCardRefs.changes.subscribe(() => this.observeCards());

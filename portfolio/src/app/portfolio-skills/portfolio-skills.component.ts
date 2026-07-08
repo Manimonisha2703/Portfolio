@@ -31,7 +31,7 @@ export class PortfolioSkillsComponent implements OnInit, AfterViewInit, OnDestro
           }
         });
       },
-      { threshold: 0.1 }
+      { threshold: 0, rootMargin: '0px 0px -60px 0px' }
     );
 
     // Observe cards when they exist, and re-observe after data loads
