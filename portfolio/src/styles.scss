@@ -46,6 +46,16 @@ html {
   scroll-padding-top: 90px;
 }
 
+html, body {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
 * {
   box-sizing: border-box;
 }

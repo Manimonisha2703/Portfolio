@@ -1,10 +1,11 @@
 :host {
   display: block;
   width: 100%;
-  padding: 1.25rem 1.5rem 0;
+  padding: 1.25rem 1.5rem 1rem;
   position: sticky;
   top: 0;
   z-index: 1000;
+  background: none !important;
 }
 
 .portfolio-header {
@@ -26,6 +27,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
 }
 
 .brand {
@@ -101,12 +103,15 @@
 
 @media (max-width: 768px) {
   :host {
-    padding: 0.75rem 0.8rem 0;
+    padding: 0.75rem 0.8rem 1;
   }
 
   .portfolio-header {
     border-radius: 20px;
     padding: 0.9rem 1rem;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.75rem;
   }
 
   .header-top {
@@ -119,10 +124,13 @@
 
   .nav-links {
     display: none;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.8rem;
-    padding-top: 0.8rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.6rem;
+    padding-top: 0.2rem;
+    width: 100%;
   }
 
   .nav-links.open {
@@ -130,11 +138,13 @@
   }
 
   .nav-links a {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
+    width: auto;
   }
 
   .mobile-hire {
     display: inline-flex;
+    justify-content: center;
   }
 
   .hire-btn:not(.mobile-hire) {
