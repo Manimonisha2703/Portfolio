@@ -6,6 +6,20 @@
   top: 0;
   z-index: 1000;
   background: none !important;
+
+  /* slide down on page load */
+  animation: headerSlideDown 0.6s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@keyframes headerSlideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .portfolio-header {
@@ -21,6 +35,17 @@
   box-shadow: 0 14px 35px var(--shadow-strong);
   color: var(--text-primary);
   font-family: 'Poppins', 'Segoe UI', sans-serif;
+  transition: padding 0.35s ease,
+              box-shadow 0.35s ease,
+              border-color 0.35s ease;
+  border: 1px solid transparent;
+}
+
+/* shrinks and deepens when user has scrolled */
+.portfolio-header.scrolled {
+  padding: 0.65rem 1.25rem;
+  box-shadow: 0 20px 50px rgba(124, 58, 237, 0.14);
+  border-color: rgba(124, 58, 237, 0.1);
 }
 
 .header-top {
@@ -30,13 +55,30 @@
   width: 100%;
 }
 
+/* ── brand ── */
+
 .brand {
   font-size: 1.2rem;
   font-weight: 700;
   letter-spacing: 0.04em;
   color: var(--text-primary);
   text-decoration: none;
+  position: relative;
+  background: linear-gradient(90deg, var(--text-primary) 0%, var(--text-primary) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  transition: background 0.4s ease, letter-spacing 0.3s ease;
 }
+
+.brand:hover {
+  background: linear-gradient(90deg, #8b5cf6 0%, #ec4899 50%, #06b6d4 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 0.07em;
+}
+
+/* ── hamburger ── */
 
 .menu-toggle {
   display: none;
@@ -53,7 +95,18 @@
   background: var(--text-primary);
   margin: 4px 0;
   border-radius: 999px;
-  transition: transform 0.3s ease, opacity 0.3s ease;
+  transition: transform 0.3s ease, opacity 0.3s ease, width 0.3s ease;
+}
+
+/* middle bar shortens before rotating — gives a nice wipe effect */
+.menu-toggle span:nth-child(2) {
+  width: 16px;
+  margin-left: 6px;
+}
+
+.menu-toggle.open span:nth-child(2) {
+  width: 22px;
+  margin-left: 0;
 }
 
 .menu-toggle.open span:nth-child(1) {
@@ -62,11 +115,14 @@
 
 .menu-toggle.open span:nth-child(2) {
   opacity: 0;
+  transform: translateX(-8px);
 }
 
 .menu-toggle.open span:nth-child(3) {
   transform: translateY(-6px) rotate(-45deg);
 }
+
+/* ── nav links ── */
 
 .nav-links {
   display: flex;
@@ -78,10 +134,50 @@
 .nav-links .nav-link {
   text-decoration: none;
   color: rgb(5 22 40 / 86%);
-  //color: rgba(248, 250, 252, 0.86);
-   
   font-weight: 500;
-  transition: color 0.2s ease, transform 0.2s ease;
+  position: relative;
+  padding-bottom: 2px;
+  transition: color 0.25s ease, transform 0.25s ease;
+}
+
+/* animated underline — slides in from left */
+.nav-links .nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #8b5cf6, #ec4899);
+  transition: width 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.nav-links .nav-link:hover {
+  color: var(--accent);
+  transform: translateY(-2px);
+}
+
+.nav-links .nav-link:hover::after {
+  width: 100%;
+}
+
+/* stagger nav links on page load */
+.nav-links .nav-link:nth-child(1) { animation: navFadeIn 0.5s ease both; animation-delay: 0.35s; }
+.nav-links .nav-link:nth-child(2) { animation: navFadeIn 0.5s ease both; animation-delay: 0.42s; }
+.nav-links .nav-link:nth-child(3) { animation: navFadeIn 0.5s ease both; animation-delay: 0.49s; }
+.nav-links .nav-link:nth-child(4) { animation: navFadeIn 0.5s ease both; animation-delay: 0.56s; }
+.nav-links .nav-link:nth-child(5) { animation: navFadeIn 0.5s ease both; animation-delay: 0.63s; }
+
+@keyframes navFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .nav-links .hire-btn {
@@ -89,13 +185,6 @@
   color: rgba(248, 250, 252, 0.86);
   font-weight: 500;
   transition: color 0.2s ease, transform 0.2s ease;
-}
-
-
-
-.nav-links .nav-link:hover {
-  color: var(--accent);
-  transform: translateY(-1px);
 }
 
 .hire-btn {
@@ -114,9 +203,11 @@
   box-shadow: 0 10px 22px rgba(56, 189, 248, 0.34);
 }
 
+/* ── mobile ── */
+
 @media (max-width: 768px) {
   :host {
-    padding: 0.75rem 0.8rem 1;
+    padding: 0.75rem 0.8rem 1rem;
   }
 
   .portfolio-header {
@@ -125,6 +216,10 @@
     flex-direction: column;
     align-items: stretch;
     gap: 0.75rem;
+  }
+
+  .portfolio-header.scrolled {
+    padding: 0.65rem 1rem;
   }
 
   .header-top {
@@ -144,11 +239,26 @@
     gap: 0.6rem;
     padding-top: 0.2rem;
     width: 100%;
+    /* slide down when opening */
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+                opacity 0.3s ease;
+    opacity: 0;
   }
 
   .nav-links.open {
     display: flex;
+    max-height: 200px;
+    opacity: 1;
   }
+
+  /* cascade each link in when menu opens */
+  .nav-links.open .nav-link:nth-child(1) { animation: navFadeIn 0.3s ease both; animation-delay: 0.05s; }
+  .nav-links.open .nav-link:nth-child(2) { animation: navFadeIn 0.3s ease both; animation-delay: 0.1s;  }
+  .nav-links.open .nav-link:nth-child(3) { animation: navFadeIn 0.3s ease both; animation-delay: 0.15s; }
+  .nav-links.open .nav-link:nth-child(4) { animation: navFadeIn 0.3s ease both; animation-delay: 0.2s;  }
+  .nav-links.open .nav-link:nth-child(5) { animation: navFadeIn 0.3s ease both; animation-delay: 0.25s; }
 
   .nav-links a {
     font-size: 0.9rem;
