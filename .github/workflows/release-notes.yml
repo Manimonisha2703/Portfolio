@@ -5,7 +5,7 @@ on:
     types:
       - closed
     branches:
-      - main
+      - master
 
 permissions:
   contents: write
@@ -25,7 +25,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v6
         with:
-          ref: main
+          ref: master
 
       # 2. Install Python
       - name: Set up Python
@@ -67,4 +67,4 @@ jobs:
           fi
 
           git commit -m "docs: update release notes"
-          git push origin main
+          git push origin master
