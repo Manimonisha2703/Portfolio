@@ -1,0 +1,70 @@
+name: Generate Release Notes
+
+on:
+  pull_request:
+    types:
+      - closed
+    branches:
+      - main
+
+permissions:
+  contents: write
+  pull-requests: read
+
+jobs:
+  generate-release-notes:
+
+    # Run only when the PR was actually merged
+    if: github.event.pull_request.merged == true
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      # 1. Get the latest main branch
+      - name: Checkout repository
+        uses: actions/checkout@v6
+        with:
+          ref: main
+
+      # 2. Install Python
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.13'
+
+      # 3. Install Python dependencies
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      # 4. Run the release notes Python script
+      - name: Generate release notes
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+
+          JIRA_BASE_URL: ${{ secrets.JIRA_BASE_URL }}
+          JIRA_EMAIL: ${{ secrets.JIRA_EMAIL }}
+          JIRA_API_TOKEN: ${{ secrets.JIRA_API_TOKEN }}
+
+        run: |
+          python scripts/generate_release_notes.py
+
+      # 5. Commit the generated release notes
+      - name: Commit release notes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add RELEASE_NOTES.md
+
+          if git diff --cached --quiet; then
+            echo "No release note changes to commit."
+            exit 0
+          fi
+
+          git commit -m "docs: update release notes"
+          git push origin main
