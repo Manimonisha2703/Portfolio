@@ -69,7 +69,7 @@ export class PortfolioAboutComponent implements OnInit, AfterViewInit, OnDestroy
 
   /**This method is to test the release notes POC */
   onCreatingReleaseNotes() {
-    console.log("Creating release notes...");
+    console.log("Creating release notes");
   }
 
   ngOnDestroy(): void {
