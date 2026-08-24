@@ -354,10 +354,10 @@ def main():
     # 3. Make sure it was merged into main
     base_branch = pull_request["base"]["ref"]
 
-    if base_branch != "main":
+    if base_branch != "master":
         print(
             f"PR was merged into '{base_branch}', "
-            "not main. Nothing to do."
+            "not master. Nothing to do."
         )
         return
 
