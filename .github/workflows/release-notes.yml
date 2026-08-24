@@ -51,7 +51,7 @@ jobs:
           JIRA_API_TOKEN: ${{ secrets.JIRA_API_TOKEN }}
 
         run: |
-          python scripts/generate_release_notes.py
+          python Scripts/generate_release_notes.py
 
       # 5. Commit the generated release notes
       - name: Commit release notes
